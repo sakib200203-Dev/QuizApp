@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen active">
+
+        <h1>🎯 Smart Quiz App</h1>
+
+        <p class="subtitle">
+            Test your knowledge with fun multiple-choice questions.
+        </p>
+
+        <button id="startBtn">
+            Start Quiz
+        </button>
+
+        <button id="aboutBtn">
+            About App
+        </button>
+
+    </div>
+
+    <!-- About Screen -->
+
+    <div id="about-screen" class="screen">
+
+        <h2>About This App</h2>
+
+        <p>
+            Smart Quiz App is a simple quiz application built using
+            HTML, CSS and JavaScript only.
+        </p>
+
+        <h3>Features</h3>
+
+        <ul>
+            <li>10 Multiple Choice Questions</li>
+            <li>Score Calculation</li>
+            <li>Progress Bar</li>
+            <li>Timer</li>
+            <li>Best Score</li>
+            <li>Responsive Design</li>
+        </ul>
+
+        <h3>How To Use</h3>
+
+        <ol>
+            <li>Click Start Quiz.</li>
+            <li>Select the correct answer.</li>
+            <li>Press Next.</li>
+            <li>Complete all questions.</li>
+            <li>View your final score.</li>
+        </ol>
+
+        <button id="backBtn">
+            Back
+        </button>
+
+    </div>
+
+    <!-- Quiz Screen -->
+
+    <div id="quiz-screen" class="screen">
+
+        <div class="top">
+
+            <span id="question-number">
+                Question 1/10
+            </span>
+
+            <span id="timer">
+                15
+            </span>
+
+        </div>
+
+        <div class="progress">
+
+            <div id="progress-bar"></div>
+
+        </div>
+
+        <h2 id="question">
+            Question goes here
+        </h2>
+
+        <div id="answers" class="answers">
+
+        </div>
+
+        <button id="nextBtn">
+            Next
+        </button>
+
+    </div>
+
+    <!-- Result Screen -->
+
+    <div id="result-screen" class="screen">
+
+        <h1>🎉 Quiz Finished</h1>
+
+        <h2 id="score">
+            Score: 0/10
+        </h2>
+
+        <h3 id="best-score">
+            Best Score: 0
+        </h3>
+
+        <button id="restartBtn">
+            Restart Quiz
+        </button>
+
+    </div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
