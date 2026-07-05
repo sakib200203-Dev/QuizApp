@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.screen{
+    display:none;
+}
+
+.screen.active{
+    display:block;
+}
+
+h1,h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#555;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+    border:none;
+    border-radius:10px;
+    background:#0077ff;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#005ecc;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.progress{
+    width:100%;
+    height:10px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:25px;
+}
+
+#progress-bar{
+    width:0%;
+    height:100%;
+    background:#28a745;
+    transition:.4s;
+}
+
+.answers{
+    display:grid;
+    gap:15px;
+    margin:25px 0;
+}
+
+.answer-btn{
+    padding:15px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    cursor:pointer;
+    background:white;
+    transition:.3s;
+    text-align:left;
+    font-size:16px;
+}
+
+.answer-btn:hover{
+    background:#eef5ff;
+}
+
+.answer-btn.selected{
+    background:#0077ff;
+    color:white;
+    border-color:#0077ff;
+}
+
+.answer-btn.correct{
+    background:#28a745;
+    color:white;
+}
+
+.answer-btn.wrong{
+    background:#dc3545;
+    color:white;
+}
+
+ul,ol{
+    margin-left:25px;
+    margin-top:10px;
+}
+
+li{
+    margin:8px 0;
+}
+
+#timer{
+    color:red;
+}
+
+#score,#best-score{
+    text-align:center;
+    margin:20px 0;
+}
+
+@media(max-width:600px){
+
+.container{
+    padding:20px;
+}
+
+button{
+    font-size:15px;
+}
+
+.answer-btn{
+    font-size:15px;
+}
+
+}
